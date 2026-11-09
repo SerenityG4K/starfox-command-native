@@ -1,0 +1,258 @@
+[
+ {
+  "adresse": 34257820,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "St13bad_exception",
+  "nom": "St13bad_exception",
+  "bases": [
+   "St9exception"
+  ]
+ },
+ {
+  "adresse": 34257868,
+  "region": "arm9",
+  "genre": "class",
+  "mangled": "St9exception",
+  "nom": "St9exception",
+  "bases": []
+ },
+ {
+  "adresse": 34257912,
+  "region": "arm9",
+  "genre": "class",
+  "mangled": "St9type_info",
+  "nom": "St9type_info",
+  "bases": []
+ },
+ {
+  "adresse": 34257920,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N3abi21__vmi_class_type_infoE",
+  "nom": "abi::__vmi_class_type_info",
+  "bases": [
+   "N3abi17__class_type_infoE"
+  ]
+ },
+ {
+  "adresse": 34257932,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N3abi20__si_class_type_infoE",
+  "nom": "abi::__si_class_type_info",
+  "bases": [
+   "N3abi17__class_type_infoE"
+  ]
+ },
+ {
+  "adresse": 34257944,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N3abi17__class_type_infoE",
+  "nom": "abi::__class_type_info",
+  "bases": [
+   "St9type_info"
+  ]
+ },
+ {
+  "adresse": 34258128,
+  "region": "arm9",
+  "genre": "class",
+  "mangled": "St15basic_streambufIcSt11char_traitsIcEE",
+  "nom": "St15basic_streambufIcSt11char_traitsIcEE",
+  "bases": []
+ },
+ {
+  "adresse": 34258136,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "St12strstreambuf",
+  "nom": "St12strstreambuf",
+  "bases": [
+   "St15basic_streambufIcSt11char_traitsIcEE"
+  ]
+ },
+ {
+  "adresse": 34258332,
+  "region": "arm9",
+  "genre": "class",
+  "mangled": "St8ios_base",
+  "nom": "St8ios_base",
+  "bases": []
+ },
+ {
+  "adresse": 34258412,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "NSt8ios_base7failureE",
+  "nom": "<St8ios_base7failure>",
+  "bases": [
+   "St9exception"
+  ]
+ },
+ {
+  "adresse": 34258520,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "NSt3tr16detail18shared_ptr_deleterIcNSt6detail18apply_array_deleteEEE",
+  "nom": "<St3tr16detail18shared_ptr_deleterIcNSt6detail18apply_array_deleteEE>",
+  "bases": [
+   "NSt3tr16detail25shared_ptr_deleter_commonE"
+  ]
+ },
+ {
+  "adresse": 34258600,
+  "region": "arm9",
+  "genre": "class",
+  "mangled": "NSt3tr16detail25shared_ptr_deleter_commonE",
+  "nom": "<St3tr16detail25shared_ptr_deleter_common>",
+  "bases": []
+ },
+ {
+  "adresse": 34258640,
+  "region": "arm9",
+  "genre": "class",
+  "mangled": "NSt6detail18apply_array_deleteE",
+  "nom": "<St6detail18apply_array_delete>",
+  "bases": []
+ },
+ {
+  "adresse": 34258804,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N10Metrowerks17console_outputbufIwSt11char_traitsIwEEE",
+  "nom": "Metrowerks::console_outputbuf<IwSt11char_traitsIwEE>",
+  "bases": [
+   "N10Metrowerks11bufferedbufIwSt11char_traitsIwEEE"
+  ]
+ },
+ {
+  "adresse": 34258868,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N10Metrowerks11bufferedbufIwSt11char_traitsIwEEE",
+  "nom": "Metrowerks::bufferedbuf<IwSt11char_traitsIwEE>",
+  "bases": [
+   "St15basic_streambufIwSt11char_traitsIwEE"
+  ]
+ },
+ {
+  "adresse": 34258996,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N10Metrowerks16console_inputbufIwSt11char_traitsIwEEE",
+  "nom": "Metrowerks::console_inputbuf<IwSt11char_traitsIwEE>",
+  "bases": [
+   "St15basic_streambufIwSt11char_traitsIwEE"
+  ]
+ },
+ {
+  "adresse": 34259112,
+  "region": "arm9",
+  "genre": "class",
+  "mangled": "St15basic_streambufIwSt11char_traitsIwEE",
+  "nom": "St15basic_streambufIwSt11char_traitsIwEE",
+  "bases": []
+ },
+ {
+  "adresse": 34259248,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N10Metrowerks17console_outputbufIcSt11char_traitsIcEEE",
+  "nom": "Metrowerks::console_outputbuf<IcSt11char_traitsIcEE>",
+  "bases": [
+   "N10Metrowerks11bufferedbufIcSt11char_traitsIcEEE"
+  ]
+ },
+ {
+  "adresse": 34259312,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N10Metrowerks11bufferedbufIcSt11char_traitsIcEEE",
+  "nom": "Metrowerks::bufferedbuf<IcSt11char_traitsIcEE>",
+  "bases": [
+   "St15basic_streambufIcSt11char_traitsIcEE"
+  ]
+ },
+ {
+  "adresse": 34259440,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "N10Metrowerks16console_inputbufIcSt11char_traitsIcEEE",
+  "nom": "Metrowerks::console_inputbuf<IcSt11char_traitsIcEE>",
+  "bases": [
+   "St15basic_streambufIcSt11char_traitsIcEE"
+  ]
+ },
+ {
+  "adresse": 34259532,
+  "region": "arm9",
+  "genre": "vmi",
+  "mangled": "St13basic_ostreamIwSt11char_traitsIwEE",
+  "nom": "St13basic_ostreamIwSt11char_traitsIwEE",
+  "bases": [
+   "St9basic_iosIwSt11char_traitsIwEE"
+  ]
+ },
+ {
+  "adresse": 34259636,
+  "region": "arm9",
+  "genre": "vmi",
+  "mangled": "St13basic_istreamIwSt11char_traitsIwEE",
+  "nom": "St13basic_istreamIwSt11char_traitsIwEE",
+  "bases": [
+   "St9basic_iosIwSt11char_traitsIwEE"
+  ]
+ },
+ {
+  "adresse": 34259712,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "St9basic_iosIwSt11char_traitsIwEE",
+  "nom": "St9basic_iosIwSt11char_traitsIwEE",
+  "bases": [
+   "St8ios_base"
+  ]
+ },
+ {
+  "adresse": 34259768,
+  "region": "arm9",
+  "genre": "vmi",
+  "mangled": "So",
+  "nom": "So",
+  "bases": [
+   "St9basic_iosIcSt11char_traitsIcEE"
+  ]
+ },
+ {
+  "adresse": 34259836,
+  "region": "arm9",
+  "genre": "vmi",
+  "mangled": "Si",
+  "nom": "Si",
+  "bases": [
+   "St9basic_iosIcSt11char_traitsIcEE"
+  ]
+ },
+ {
+  "adresse": 34259912,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "St9basic_iosIcSt11char_traitsIcEE",
+  "nom": "St9basic_iosIcSt11char_traitsIcEE",
+  "bases": [
+   "St8ios_base"
+  ]
+ },
+ {
+  "adresse": 34260256,
+  "region": "arm9",
+  "genre": "si",
+  "mangled": "St13runtime_error",
+  "nom": "St13runtime_error",
+  "bases": [
+   "St9exception"
+  ]
+ }
+]

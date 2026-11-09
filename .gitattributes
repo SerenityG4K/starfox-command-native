@@ -1,0 +1,2 @@
+# les scripts du banc tournent sous bash : jamais de CRLF
+*.sh text eol=lf

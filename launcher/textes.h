@@ -1,0 +1,55 @@
+/* Les textes du lanceur, en trois langues : anglais (par défaut), français, japonais (textes.c). Sous licence MIT. */
+#pragma once
+#include <wchar.h>
+
+/* La langue de l'interface du lanceur — pas celle du jeu, que la cartouche fixe. */
+enum { INTERFACE_EN, INTERFACE_FR, INTERFACE_JA, NB_INTERFACES };
+extern int g_interface;
+/* son code, pour lanceur.ini et pour tools/preparer.py (« en », « fr », « ja ») */
+const char *code_interface(int i);
+int interface_du_code(const wchar_t *code);      /* -1 si inconnu */
+
+enum {
+    /* l'accueil (habillage.c) */
+    T_TITRE_FENETRE, T_SOUS_TITRE, T_JOUER, T_PREPARER, T_PREPARATION,
+    T_MENU_REGLAGES, T_MENU_CONTROLES, T_MENU_MODS, T_MENU_QUITTER,
+    T_CARTOUCHE_TITRE, T_CHANGER, T_CHOISIR, T_AUCUNE, T_NON_RECONNUE, T_IL_FAUT,
+    T_EN_PREPARATION, T_PRET, T_SAUVEGARDE, T_PAS_CONSTRUIT, T_PAS_CONSTRUIT_2, T_DEFILE,
+    /* Réglages */
+    T_L_CARTOUCHE, T_PARCOURIR, T_L_LANGUE, T_NOTE_LANGUE, T_L_FINESSE, T_FINESSE_1, T_FINESSE_2, T_FINESSE_3,
+    T_FINESSE_4, T_NOTE_FINESSE, T_L_TEXTURES, T_TEXTURES_1, T_TEXTURES_2, T_TEXTURES_3, T_L_CADENCE, T_NOTE_CADENCE,
+    T_L_DISTANCE, T_DISTANCE_1, T_DISTANCE_2, T_NOTE_DISTANCE, T_SON, T_SPECIALISTES, T_L_REACTION,
+    T_REACTION_1, T_REACTION_2, T_REACTION_3,
+    /* Contrôles */
+    T_BOUTONS_CONSOLE, T_CROIX, T_RACCOURCIS, T_HAUT, T_BAS, T_GAUCHE, T_DROITE, T_RAPIDE, T_JOURNAL,
+    T_NOTE_TOUCHES, T_CAPTURE, T_TOUCHE_WINDOWS, T_ECHANGE, T_ORIGINE_REVENUE, T_ORIGINE, T_TOUCHE_N, T_AUCUNE_TOUCHE,
+    T_MANETTE, T_STICK, T_AXE_1, T_AXE_2,
+    /* Mods */
+    T_VAISSEAU_DE, T_M_LASER, T_M_VERROU, T_M_JAUGE, T_M_APPARENCE,
+    T_LASER_0, T_LASER_1, T_LASER_2, T_LASER_3, T_LASER_4, T_LASER_5,
+    T_VERROU_0, T_VERROU_1, T_VERROU_2, T_VERROU_3,
+    T_JAUGE_0, T_JAUGE_1, T_JAUGE_2,
+    T_CHOIX_LASER_1, T_CHOIX_LASER_2, T_CHOIX_LASER_3, T_CHOIX_LASER_4, T_CHOIX_LASER_5,
+    T_CHOIX_VERROU_1, T_CHOIX_VERROU_2, T_CHOIX_VERROU_3,
+    T_CHOIX_JAUGE_1, T_CHOIX_JAUGE_2, T_CHOIX_JAUGE_3,
+    T_VAISSEAU_1, T_VAISSEAU_2, T_VAISSEAU_3, T_VAISSEAU_4, T_VAISSEAU_5, T_VAISSEAU_6, T_VAISSEAU_7, T_VAISSEAU_8,
+    T_VAISSEAU_9, T_VAISSEAU_10, T_VAISSEAU_11, T_VAISSEAU_12, T_VAISSEAU_13, T_VAISSEAU_14, T_VAISSEAU_15,
+    T_VAISSEAU_16,
+    T_CELUI_DE_LA_PARTIE, T_LE_SIEN_DE, T_LA_SIENNE_DE, T_LE_SIEN, T_MODIFIE,
+    T_DEGATS, T_DEGATS_RECUS, T_INVINCIBLE, T_TURBO, T_BOMBES, T_CHARGE,
+    T_INFLIGES_1, T_INFLIGES_2, T_INFLIGES_3, T_INFLIGES_4, T_INFLIGES_5,
+    T_RECUS_1, T_RECUS_2, T_RECUS_3,
+    T_TITRE_DEGATS, T_TOUS_PILOTES, T_NOTE_MODS, T_AUCUN_MOD,
+    /* les fenêtres de message */
+    T_FILTRE, T_TITRE_CHOIX, T_CHOISIR_DABORD, T_INTROUVABLE, T_PAS_DONNEES, T_ILLISIBLE, T_AUTRE_VERSION,
+    T_PAS_ENCORE, T_PAS_DEMARRE, T_IL_FAUT_NDS, T_SANS_PREPARER, T_SANS_PYTHON, T_VERSION_PRECEDENTE, T_QUESTION,
+    T_TITRE_PREPARER, T_PREPARATION_PAS_DEMARREE, T_ETAPE, T_ETAPE_1, T_ETAPE_2, T_ETAPE_3, T_ETAPE_4, T_ETAPE_5,
+    T_ETAPE_6, T_REUSSI, T_ECHEC, T_ECHEC_DEUX_POINTS, T_ECHEC_POINT, T_ARRETER,
+    NB_TEXTES
+};
+
+const wchar_t *T(int texte);
+/* Le nom d'un pilote dans la langue de l'interface (1 à 16, dans l'ordre du jeu). */
+const wchar_t *nom_pilote(int rang);
+/* La police des textes de l'interface : Segoe UI, ou une police japonaise. */
+const wchar_t *police_interface(void);

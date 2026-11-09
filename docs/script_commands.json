@@ -1,0 +1,2740 @@
+{
+ "commandes": {
+  "RegistHeightGridObject": {
+   "appels": 13239,
+   "fichiers": 164,
+   "signatures": {
+    "IDENT IDENT INT INT": 13239
+   },
+   "exemples": [
+    "RegistHeightGridObject HeightPoly Pillar      1 1",
+    "RegistHeightGridObject HeightPoly F           2 1",
+    "RegistHeightGridObject HeightPoly H           3 1"
+   ]
+  },
+  "CreateEnemyTemplate": {
+   "appels": 4325,
+   "fichiers": 456,
+   "signatures": {
+    "IDENT VEC VEC VEC INT": 4133,
+    "IDENT VEC VEC VEC": 192
+   },
+   "exemples": [
+    "CreateEnemyTemplate eAngelFish <0 850 3500> <0 0 0> <1 1 1> 0",
+    "CreateEnemyTemplate eAngelFish <0 850 -3500> <0 0 0> <1 1 1> 0",
+    "CreateEnemyTemplate eAngelFish <3500 850 0> <0 0 0> <1 1 1> 0"
+   ]
+  },
+  "SetConfigParam": {
+   "appels": 3265,
+   "fichiers": 95,
+   "signatures": {
+    "IDENT INT": 3043,
+    "IDENT IDENT": 154,
+    "IDENT HEX": 68
+   },
+   "exemples": [
+    "SetConfigParam MaxHeight 1000",
+    "SetConfigParam MinHeight 70",
+    "SetConfigParam Camera_Height 0"
+   ]
+  },
+  "MemberTalks": {
+   "appels": 1627,
+   "fichiers": 48,
+   "signatures": {
+    "VEC": 389,
+    "VEC INT": 877,
+    "VEC INT INT": 286,
+    "VEC INT INT INT": 48,
+    "VEC INT INT INT INT": 17,
+    "VEC INT INT IDENT": 2,
+    "VEC INT INT INT INT INT": 6,
+    "VEC INT INT INT INT INT INT": 1,
+    "VEC INT INT INT INT INT INT INT INT INT": 1
+   },
+   "exemples": [
+    "MemberTalks < left naus >",
+    "MemberTalks < right fox > 0724",
+    "MemberTalks < left none >"
+   ]
+  },
+  "RegistModel": {
+   "appels": 1617,
+   "fichiers": 213,
+   "signatures": {
+    "IDENT PATH": 1616,
+    "IDENT IDENT": 1
+   },
+   "exemples": [
+    "RegistModel ArwingShield rom:/ArwingShield.nsbmd",
+    "RegistModel B rom:/B.nsbmd",
+    "RegistModel E rom:/E.nsbmd"
+   ]
+  },
+  "LoadHeightMap": {
+   "appels": 1212,
+   "fichiers": 164,
+   "signatures": {
+    "IDENT IDENT PATH": 1212
+   },
+   "exemples": [
+    "LoadHeightMap Pillar      Convex  /3D/Venom/GrndSetA/Pillar_Col.hgt",
+    "LoadHeightMap C           Convex  /3D/Venom/GrndSetA/C_Col.hgt",
+    "LoadHeightMap H           Convex  /3D/Venom/GrndSetA/H_Col.hgt"
+   ]
+  },
+  "CreateObject": {
+   "appels": 1208,
+   "fichiers": 181,
+   "signatures": {
+    "IDENT IDENT IDENT VEC VEC VEC VEC INT INT": 453,
+    "IDENT IDENT IDENT VEC VEC VEC VEC INT INT IDENT IDENT": 645,
+    "IDENT IDENT IDENT VEC VEC VEC VEC INT INT IDENT IDENT IDENT IDENT": 9,
+    "IDENT IDENT IDENT VEC VEC VEC VEC INT INT IDENT IDENT INT": 60,
+    "IDENT": 1,
+    "IDENT IDENT IDENT VEC VEC VEC VEC INT INT IDENT IDENT IDENT": 23,
+    "IDENT IDENT IDENT VEC VEC VEC IDENT IDENT": 3,
+    "IDENT IDENT IDENT VEC VEC VEC VEC INT INT INT IDENT IDENT": 1,
+    "IDENT IDENT IDENT VEC VEC VEC": 7,
+    "IDENT IDENT IDENT VEC VEC VEC VEC INT INT IDENT IDENT IDENT IDENT IDENT": 3,
+    "IDENT IDENT IDENT VEC VEC VEC VEC INT INT IDENT": 3
+   },
+   "exemples": [
+    "CreateObject None info_board msg_tex <0 0> <232 81> <0 0> <1 1> 31 15",
+    "CreateObject None handicap_board text_tex <0 18> <230 13> <1 0> <1 1> 31 16\t\t\t# “HANDICAP”",
+    "CreateObject None handicap_board text_tex <0 34> <209 20> <11 25> <1 1> 31 16\t\t# ボタン枠"
+   ]
+  },
+  "SetEnemyState": {
+   "appels": 1106,
+   "fichiers": 188,
+   "signatures": {
+    "IDENT": 284,
+    "IDENT VEC INT": 136,
+    "IDENT INT INT IDENT VEC": 70,
+    "IDENT IDENT IDENT": 268,
+    "IDENT IDENT": 103,
+    "IDENT IDENT INT": 138,
+    "IDENT IDENT VEC": 66,
+    "IDENT INT INT IDENT": 25,
+    "IDENT INT INT": 8,
+    "IDENT FLOAT FLOAT INT": 4,
+    "IDENT INT FLOAT": 4
+   },
+   "exemples": [
+    "SetEnemyState DemoEnemy",
+    "SetEnemyState DemoEnemy",
+    "SetEnemyState DemoEnemy"
+   ]
+  },
+  "MaskEdit": {
+   "appels": 936,
+   "fichiers": 39,
+   "signatures": {
+    "IDENT": 936
+   },
+   "exemples": [
+    "MaskEdit ................................",
+    "MaskEdit .n.....................L........",
+    "MaskEdit .........l......T...........h..."
+   ]
+  },
+  "FogEdit": {
+   "appels": 936,
+   "fichiers": 39,
+   "signatures": {
+    "IDENT": 936
+   },
+   "exemples": [
+    "FogEdit XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "FogEdit XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "FogEdit XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+   ]
+  },
+  "SetVolume": {
+   "appels": 830,
+   "fichiers": 13,
+   "signatures": {
+    "VEC": 657,
+    "INT": 76,
+    "VEC VEC": 97
+   },
+   "exemples": [
+    "SetVolume <100>",
+    "SetVolume <50>",
+    "SetVolume <250>"
+   ]
+  },
+  "SetModel": {
+   "appels": 821,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT PATH": 821
+   },
+   "exemples": [
+    "SetModel DummyTargetEnemy /3D/Enemy/DummyCube/DummyCubeS.mdl",
+    "SetModel StarFish /3D/Enemy/StarFish/StarFish.mdl",
+    "SetModel StarFish_Demo /3D/Enemy/StarFish/StarFish.mdl"
+   ]
+  },
+  "AddPath": {
+   "appels": 684,
+   "fichiers": 13,
+   "signatures": {
+    "VEC": 684
+   },
+   "exemples": [
+    "AddPath <2500 600 2500>",
+    "AddPath <-2500 600 2500>",
+    "AddPath <-2500 600 -2500>"
+   ]
+  },
+  "RegistHeightModel": {
+   "appels": 678,
+   "fichiers": 129,
+   "signatures": {
+    "IDENT PATH": 678
+   },
+   "exemples": [
+    "RegistHeightModel Pillar       /3D/Venom/GrndSetA/Pillar.mdl",
+    "RegistHeightModel PillarGR_Gr  /3D/Venom/GrndSetA/PillarGR_Gr.mdl",
+    "RegistHeightModel C            /3D/Venom/GrndSetA/C.mdl"
+   ]
+  },
+  "PushTexAnim": {
+   "appels": 627,
+   "fichiers": 35,
+   "signatures": {
+    "INT FLOAT": 620,
+    "INT IDENT": 7
+   },
+   "exemples": [
+    "PushTexAnim 0 1.0",
+    "PushTexAnim 0 1.0",
+    "PushTexAnim 0 1.0"
+   ]
+  },
+  "RegistStageLayer": {
+   "appels": 616,
+   "fichiers": 23,
+   "signatures": {
+    "IDENT IDENT": 330,
+    "IDENT PATH": 285,
+    "IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "RegistStageLayer _DummyStage_1\t\t_DummyStage_1",
+    "RegistStageLayer _DummyStage_2\t\t_DummyStage_2",
+    "RegistStageLayer _DummyStage_3\t\t_DummyStage_3"
+   ]
+  },
+  "LoadTexAnimPatt": {
+   "appels": 610,
+   "fichiers": 35,
+   "signatures": {
+    "IDENT IDENT": 610
+   },
+   "exemples": [
+    "LoadTexAnimPatt PLTT4 rom:/3D/Textures/Overlays/HUD/NumLG_SP",
+    "LoadTexAnimPatt PLTT4 rom:/3D/Textures/Overlays/HUD/0G_SP",
+    "LoadTexAnimPatt PLTT4 rom:/3D/Textures/Overlays/HUD/alert_number"
+   ]
+  },
+  "SetTexAnimSize": {
+   "appels": 607,
+   "fichiers": 35,
+   "signatures": {
+    "FLOAT FLOAT": 600,
+    "FLOAT FLOAT FLOAT FLOAT": 7
+   },
+   "exemples": [
+    "SetTexAnimSize 64.0 64.0",
+    "SetTexAnimSize 128.0 16.0",
+    "SetTexAnimSize 16.0 16.0"
+   ]
+  },
+  "CreateTexAnimBase": {
+   "appels": 587,
+   "fichiers": 35,
+   "signatures": {
+    "IDENT INT INT": 387,
+    "INT INT": 200
+   },
+   "exemples": [
+    "CreateTexAnimBase NumLG 128 16",
+    "CreateTexAnimBase 0G 16 16",
+    "CreateTexAnimBase AlertNum 256 128"
+   ]
+  },
+  "SetTexAnimLoop": {
+   "appels": 574,
+   "fichiers": 35,
+   "signatures": {
+    "IDENT": 574
+   },
+   "exemples": [
+    "SetTexAnimLoop true",
+    "SetTexAnimLoop true",
+    "SetTexAnimLoop true"
+   ]
+  },
+  "Include": {
+   "appels": 560,
+   "fichiers": 198,
+   "signatures": {
+    "PATH": 560
+   },
+   "exemples": [
+    "Include rom:/CollisionChanges.txt",
+    "Include rom:/tankpath.txt",
+    "Include rom:/HoverPath1.txt"
+   ]
+  },
+  "SetCityState": {
+   "appels": 555,
+   "fichiers": 53,
+   "signatures": {
+    "IDENT IDENT": 411,
+    "IDENT INT": 141,
+    "IDENT IDENT IDENT IDENT IDENT": 2,
+    "IDENT VEC": 1
+   },
+   "exemples": [
+    "SetCityState model_name CityBase",
+    "SetCityState enemy_name HoverEnemy",
+    "SetCityState charge 3"
+   ]
+  },
+  "RegistEnemy": {
+   "appels": 510,
+   "fichiers": 34,
+   "signatures": {
+    "IDENT PATH": 260,
+    "IDENT": 250
+   },
+   "exemples": [
+    "RegistEnemy RollingTank rom:/3D/Corneria/Scripts/RollingTank.txt",
+    "RegistEnemy DevilWorm rom:/3D/Corneria/Scripts/DevilWorm.txt",
+    "RegistEnemy LaserTurret rom:/3D/Corneria/Scripts/LaserTurret.txt"
+   ]
+  },
+  "break": {
+   "appels": 489,
+   "fichiers": 74,
+   "signatures": {
+    "": 489
+   },
+   "exemples": [
+    "break",
+    "break",
+    "break"
+   ]
+  },
+  "RegistVolume": {
+   "appels": 455,
+   "fichiers": 75,
+   "signatures": {
+    "IDENT FLOAT": 204,
+    "IDENT INT": 49,
+    "IDENT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT": 5,
+    "IDENT INT INT INT INT INT INT INT": 16,
+    "IDENT INT INT FLOAT FLOAT INT FLOAT INT": 1,
+    "IDENT INT INT FLOAT INT INT FLOAT INT": 1,
+    "IDENT INT INT INT FLOAT INT INT FLOAT": 1,
+    "IDENT INT INT FLOAT FLOAT INT FLOAT FLOAT": 1,
+    "IDENT FLOAT INT FLOAT FLOAT INT FLOAT FLOAT": 2,
+    "IDENT INT INT INT INT FLOAT FLOAT INT": 1,
+    "IDENT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT INT": 1,
+    "IDENT FLOAT INT FLOAT FLOAT INT FLOAT INT": 4,
+    "IDENT FLOAT INT INT INT INT INT FLOAT": 2,
+    "IDENT FLOAT INT INT INT INT FLOAT FLOAT": 2,
+    "IDENT FLOAT INT INT FLOAT INT INT FLOAT": 3,
+    "IDENT FLOAT INT INT INT INT FLOAT INT": 1,
+    "IDENT FLOAT FLOAT FLOAT INT FLOAT FLOAT FLOAT": 4,
+    "IDENT FLOAT FLOAT INT INT FLOAT FLOAT INT": 2,
+    "IDENT FLOAT IDENT IDENT INT FLOAT FLOAT INT": 1,
+    "IDENT FLOAT INT FLOAT INT INT FLOAT INT": 1,
+    "IDENT FLOAT INT INT INT FLOAT FLOAT FLOAT": 3,
+    "IDENT FLOAT INT FLOAT FLOAT FLOAT FLOAT FLOAT": 1,
+    "IDENT FLOAT INT INT FLOAT INT INT INT": 2,
+    "IDENT FLOAT INT INT FLOAT FLOAT FLOAT INT": 1,
+    "IDENT FLOAT INT INT INT FLOAT FLOAT INT": 2,
+    "INT": 141,
+    "FLOAT": 3
+   },
+   "exemples": [
+    "RegistVolume Laser 15.0",
+    "RegistVolume TankMissile 15.0",
+    "RegistVolume Enemy01 40.0"
+   ]
+  },
+  "SetFlashModel": {
+   "appels": 429,
+   "fichiers": 13,
+   "signatures": {
+    "VEC": 151,
+    "": 273,
+    "IDENT": 5
+   },
+   "exemples": [
+    "SetFlashModel <31 0 0>",
+    "SetFlashModel <31 0 0>",
+    "SetFlashModel <31 0 0>"
+   ]
+  },
+  "RegistRound": {
+   "appels": 424,
+   "fichiers": 60,
+   "signatures": {
+    "INT": 417,
+    "INT IDENT IDENT": 4,
+    "INT IDENT": 3
+   },
+   "exemples": [
+    "RegistRound 0",
+    "RegistRound 1",
+    "RegistRound 2"
+   ]
+  },
+  "RegistTexture": {
+   "appels": 423,
+   "fichiers": 222,
+   "signatures": {
+    "IDENT IDENT VEC IDENT": 231,
+    "IDENT IDENT VEC IDENT IDENT": 15,
+    "IDENT IDENT VEC IDENT IDENT IDENT": 160,
+    "IDENT IDENT VEC IDENT IDENT IDENT IDENT": 16,
+    "IDENT IDENT VEC IDENT IDENT IDENT IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "RegistTexture msg_tex Menu/MultiPlay/mp_err_cl_txt <256 128> COMP4x4",
+    "RegistTexture text_tex\tMenu/MultiPlay/handicap_d_txt2 <256 256> COMP4x4\t\t#",
+    "RegistTexture text_tex\tMenu/MultiPlay/handicap_c_txt2 <256 128> COMP4x4"
+   ]
+  },
+  "PushPulseData": {
+   "appels": 406,
+   "fichiers": 7,
+   "signatures": {
+    "INT INT": 406
+   },
+   "exemples": [
+    "PushPulseData 15 15",
+    "PushPulseData 15 15",
+    "PushPulseData 15 15"
+   ]
+  },
+  "CreateGroup": {
+   "appels": 388,
+   "fichiers": 207,
+   "signatures": {
+    "IDENT INT VEC": 334,
+    "IDENT INT": 12,
+    "IDENT": 18,
+    "IDENT INT IDENT": 5,
+    "IDENT INT VEC IDENT": 2,
+    "IDENT INT VEC IDENT IDENT": 17
+   },
+   "exemples": [
+    "CreateGroup board_group 16 <12 50>",
+    "CreateGroup global_group 17 <0 0>",
+    "CreateGroup board_group 17 <12 21>"
+   ]
+  },
+  "SetWeakPoint": {
+   "appels": 370,
+   "fichiers": 13,
+   "signatures": {
+    "VEC": 292,
+    "VEC VEC": 67,
+    "INT": 11
+   },
+   "exemples": [
+    "SetWeakPoint <100>",
+    "SetWeakPoint <50>",
+    "SetWeakPoint <50>"
+   ]
+  },
+  "RegistModelSet": {
+   "appels": 356,
+   "fichiers": 186,
+   "signatures": {
+    "IDENT PATH": 356
+   },
+   "exemples": [
+    "RegistModelSet CorneriaSea rom:/CorneriaSea_notex.nsbmd",
+    "RegistModelSet CorneriaBlock rom:/CorneriaLod3_notex.nsbmd",
+    "RegistModelSet ArwingSet rom:/3D/Starfox/Arwing/Arwing.tset"
+   ]
+  },
+  "RegistStage": {
+   "appels": 356,
+   "fichiers": 42,
+   "signatures": {
+    "IDENT PATH": 338,
+    "IDENT PATH INT": 18
+   },
+   "exemples": [
+    "RegistStage CorneriaCityEBase rom:/3D/Corneria/Scripts/CorCityB.txt",
+    "RegistStage CorneriaCity rom:/3D/Corneria/Scripts/CorCity.txt",
+    "RegistStage CorneriaCitySFBase rom:/3D/Corneria/Scripts/CorCityB.txt"
+   ]
+  },
+  "RegistNonTarget": {
+   "appels": 331,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT PATH": 331
+   },
+   "exemples": [
+    "RegistNonTarget _DummyStage_1\t\t/3D/Shared/Scripts/gDummyStage_1.txt",
+    "RegistNonTarget _DummyStage_2\t\t/3D/Shared/Scripts/gDummyStage_2.txt",
+    "RegistNonTarget _DummyStage_3\t\t/3D/Shared/Scripts/gDummyStage_3.txt"
+   ]
+  },
+  "CreateDesignButton2": {
+   "appels": 329,
+   "fichiers": 112,
+   "signatures": {
+    "IDENT IDENT IDENT VEC VEC INT INT IDENT": 53,
+    "IDENT IDENT VEC": 156,
+    "IDENT IDENT IDENT VEC VEC": 82,
+    "IDENT IDENT IDENT VEC VEC IDENT": 10,
+    "IDENT IDENT IDENT VEC VEC INT INT": 28
+   },
+   "exemples": [
+    "CreateDesignButton2 Custom2 btn_handi_low board_group <69 18> <12 26> 31 15 no_shadow",
+    "CreateDesignButton2 Custom2 btn_handi_middle board_group <69 18> <81 26> 31 15 no_shadow",
+    "CreateDesignButton2 Custom2 btn_handi_high board_group <69 18> <150 26> 31 15 no_shadow"
+   ]
+  },
+  "CreateEncountEnemy": {
+   "appels": 328,
+   "fichiers": 53,
+   "signatures": {
+    "IDENT VEC": 37,
+    "IDENT IDENT": 4,
+    "IDENT VEC INT": 101,
+    "IDENT IDENT INT": 170,
+    "IDENT IDENT IDENT": 16
+   },
+   "exemples": [
+    "CreateEncountEnemy HoverEnemy <127 78>",
+    "CreateEncountEnemy ChaseEnemy <230 70>",
+    "CreateEncountEnemy HoverEnemy AnyCity"
+   ]
+  },
+  "RegistRoundEnd": {
+   "appels": 321,
+   "fichiers": 60,
+   "signatures": {
+    "": 321
+   },
+   "exemples": [
+    "RegistRoundEnd",
+    "RegistRoundEnd",
+    "RegistRoundEnd"
+   ]
+  },
+  "SetEncountState": {
+   "appels": 266,
+   "fichiers": 47,
+   "signatures": {
+    "IDENT IDENT": 227,
+    "IDENT INT": 39
+   },
+   "exemples": [
+    "SetEncountState type normal:3",
+    "SetEncountState type normal:3",
+    "SetEncountState type normal:3"
+   ]
+  },
+  "SetPulseRamp": {
+   "appels": 259,
+   "fichiers": 7,
+   "signatures": {
+    "FLOAT FLOAT FLOAT INT": 91,
+    "INT INT FLOAT FLOAT": 7,
+    "INT FLOAT FLOAT INT IDENT": 7,
+    "INT FLOAT FLOAT INT": 35,
+    "INT FLOAT INT INT": 14,
+    "FLOAT INT FLOAT INT": 63,
+    "FLOAT FLOAT FLOAT FLOAT IDENT": 7,
+    "FLOAT FLOAT FLOAT FLOAT": 7,
+    "FLOAT INT FLOAT INT IDENT": 7,
+    "INT INT FLOAT INT": 14,
+    "INT INT FLOAT INT IDENT": 7
+   },
+   "exemples": [
+    "SetPulseRamp 0.1 1.0 0.15 0",
+    "SetPulseRamp 0.2 1.0 0.3 0",
+    "SetPulseRamp 0.2 1.0 0.2 0"
+   ]
+  },
+  "SetCallback": {
+   "appels": 250,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT": 250
+   },
+   "exemples": [
+    "SetCallback TestCallback",
+    "SetCallback ecStarfish",
+    "SetCallback ecPorcupineFish"
+   ]
+  },
+  "SetVehicle": {
+   "appels": 250,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT": 250
+   },
+   "exemples": [
+    "SetVehicle SimpleVehicle",
+    "SetVehicle CollideVehicle",
+    "SetVehicle CollideVehicle"
+   ]
+  },
+  "SetCollisionType": {
+   "appels": 250,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT": 250
+   },
+   "exemples": [
+    "SetCollisionType ENEMY",
+    "SetCollisionType ENEMY",
+    "SetCollisionType ENEMY"
+   ]
+  },
+  "SetWeapon": {
+   "appels": 250,
+   "fichiers": 13,
+   "signatures": {
+    "INT INT IDENT": 250
+   },
+   "exemples": [
+    "SetWeapon 0 10 RegularLaser",
+    "SetWeapon 0 15 RingLaserA",
+    "SetWeapon 0 15 SquareLaser"
+   ]
+  },
+  "SetExplosion": {
+   "appels": 249,
+   "fichiers": 13,
+   "signatures": {
+    "INT": 249
+   },
+   "exemples": [
+    "SetExplosion 0",
+    "SetExplosion 0",
+    "SetExplosion 0"
+   ]
+  },
+  "SetLife": {
+   "appels": 248,
+   "fichiers": 13,
+   "signatures": {
+    "INT INT INT": 248
+   },
+   "exemples": [
+    "SetLife 50 10 0",
+    "SetLife 100 10 0",
+    "SetLife 200 10 0"
+   ]
+  },
+  "ActorObject": {
+   "appels": 247,
+   "fichiers": 98,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT INT INT FLOAT FLOAT FLOAT INT INT INT INT INT INT": 43,
+    "IDENT IDENT IDENT IDENT FLOAT FLOAT FLOAT INT FLOAT FLOAT FLOAT FLOAT INT INT INT": 7,
+    "IDENT IDENT IDENT IDENT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT": 29,
+    "IDENT IDENT IDENT IDENT INT FLOAT INT INT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT": 7,
+    "IDENT IDENT IDENT IDENT FLOAT FLOAT INT INT INT FLOAT FLOAT FLOAT INT INT INT": 29,
+    "IDENT IDENT IDENT IDENT FLOAT FLOAT INT INT INT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT": 116,
+    "IDENT IDENT IDENT IDENT INT INT FLOAT FLOAT FLOAT INT INT INT INT INT": 4,
+    "IDENT IDENT IDENT IDENT INT INT INT INT INT INT INT INT INT INT INT": 11,
+    "IDENT IDENT IDENT IDENT FLOAT FLOAT FLOAT INT INT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT": 1
+   },
+   "exemples": [
+    "ActorObject Dummy RedStarItem CollideVehicle MAP_OBJECT  0 0 0.0 0.0 0.0 0 0 0 1 1 1",
+    "ActorObject Dummy RedStarItem CollideVehicle MAP_OBJECT  0 0 0.0 0.0 0.0 0 0 0 1 1 1",
+    "ActorObject Dummy RedStarItem CollideVehicle MAP_OBJECT  0 0 0.0 0.0 0.0 0 0 0 1 1 1"
+   ]
+  },
+  "CreateArwing": {
+   "appels": 247,
+   "fichiers": 58,
+   "signatures": {
+    "IDENT VEC INT": 79,
+    "IDENT IDENT INT": 67,
+    "IDENT IDENT": 80,
+    "IDENT IDENT INT IDENT": 21
+   },
+   "exemples": [
+    "CreateArwing naus <21 168> 45",
+    "CreateArwing fox <29 146> 30",
+    "CreateArwing slippy <43 160> 60"
+   ]
+  },
+  "SetRadar": {
+   "appels": 233,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT": 233
+   },
+   "exemples": [
+    "SetRadar FLYING_ENEMY_TARGET",
+    "SetRadar FLYING_ENEMY_TARGET",
+    "SetRadar FLYING_ENEMY_TARGET"
+   ]
+  },
+  "SetArwingState": {
+   "appels": 230,
+   "fichiers": 56,
+   "signatures": {
+    "IDENT INT": 77,
+    "IDENT IDENT IDENT IDENT IDENT": 123,
+    "IDENT IDENT IDENT IDENT IDENT IDENT IDENT IDENT IDENT": 4,
+    "IDENT IDENT IDENT IDENT IDENT IDENT": 2,
+    "IDENT IDENT IDENT IDENT IDENT IDENT IDENT IDENT": 11,
+    "IDENT IDENT IDENT INT IDENT IDENT": 7,
+    "IDENT IDENT VEC IDENT IDENT IDENT IDENT IDENT": 1,
+    "IDENT IDENT IDENT IDENT IDENT IDENT IDENT": 4,
+    "IDENT IDENT VEC IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "SetArwingState distance 96",
+    "SetArwingState distance 128",
+    "SetArwingState distance 128"
+   ]
+  },
+  "AddTexFlashColor": {
+   "appels": 224,
+   "fichiers": 7,
+   "signatures": {
+    "INT INT INT": 224
+   },
+   "exemples": [
+    "AddTexFlashColor 31 3 0",
+    "AddTexFlashColor 31 3 0",
+    "AddTexFlashColor 31 3 0"
+   ]
+  },
+  "PushBackGround": {
+   "appels": 218,
+   "fichiers": 73,
+   "signatures": {
+    "IDENT": 218
+   },
+   "exemples": [
+    "PushBackGround BG",
+    "PushBackGround Clouds",
+    "PushBackGround Sun"
+   ]
+  },
+  "SetAnim": {
+   "appels": 218,
+   "fichiers": 12,
+   "signatures": {
+    "IDENT PATH": 218
+   },
+   "exemples": [
+    "SetAnim Open /3D/Enemy/StarFish/Open.anim",
+    "SetAnim Close /3D/Enemy/StarFish/Close.anim",
+    "SetAnim StarFishAnim_Demo /3D/Enemy/StarFish/StarFishDemo.anim"
+   ]
+  },
+  "CreateBoard": {
+   "appels": 211,
+   "fichiers": 141,
+   "signatures": {
+    "IDENT IDENT VEC VEC INT": 211
+   },
+   "exemples": [
+    "CreateBoard info_board board_group <232 81> <0 0> 16",
+    "CreateBoard handicap_board board_group <232 57> <0 0> 17",
+    "CreateBoard control_board board_group <232 57> <0 71> 17"
+   ]
+  },
+  "CreatePulse": {
+   "appels": 210,
+   "fichiers": 7,
+   "signatures": {
+    "IDENT INT INT": 210
+   },
+   "exemples": [
+    "CreatePulse SmallDamage 15 0",
+    "CreatePulse LargeDamage 25 0",
+    "CreatePulse NearBlast 50 0"
+   ]
+  },
+  "SetButtonGraphics": {
+   "appels": 208,
+   "fichiers": 11,
+   "signatures": {
+    "IDENT IDENT VEC VEC VEC VEC INT INT IDENT IDENT": 45,
+    "IDENT IDENT VEC VEC VEC VEC INT INT": 148,
+    "IDENT IDENT IDENT VEC VEC VEC INT INT": 9,
+    "IDENT IDENT IDENT VEC VEC VEC INT INT IDENT IDENT": 6
+   },
+   "exemples": [
+    "SetButtonGraphics Normal button_wnd_tex <0 0> <7 23> <0 0> <1 1> 31 16\t\t\t# ボタン枠（３つ）",
+    "SetButtonGraphics Normal button_wnd_tex <8 0> <1 23> <7 0> <115 1> 31 16",
+    "SetButtonGraphics Normal button_wnd_tex <10 0> <5 23> <122 0> <1 1> 31 16"
+   ]
+  },
+  "RegistEffect": {
+   "appels": 203,
+   "fichiers": 19,
+   "signatures": {
+    "IDENT": 203
+   },
+   "exemples": [
+    "RegistEffect ShieldG_S",
+    "RegistEffect ShieldG_M",
+    "RegistEffect ShieldG_L"
+   ]
+  },
+  "SetButtonGraphics2": {
+   "appels": 172,
+   "fichiers": 40,
+   "signatures": {
+    "VEC IDENT VEC VEC INT": 93,
+    "INT IDENT VEC VEC INT": 79
+   },
+   "exemples": [
+    "SetButtonGraphics2 <0 0> text_tex <1 56> <69 18> 14",
+    "SetButtonGraphics2 <0 0> text_tex <70 56> <69 18> 14",
+    "SetButtonGraphics2 <0 0> text_tex <139 56> <69 18> 14"
+   ]
+  },
+  "SetPulseSinWave": {
+   "appels": 168,
+   "fichiers": 7,
+   "signatures": {
+    "FLOAT FLOAT FLOAT INT": 133,
+    "FLOAT FLOAT INT INT": 21,
+    "FLOAT INT INT INT": 14
+   },
+   "exemples": [
+    "SetPulseSinWave 0.1 0.9 1.0 5",
+    "SetPulseSinWave 0.1 0.9 1.0 5",
+    "SetPulseSinWave 0.1 0.9 1 5"
+   ]
+  },
+  "CreateCity": {
+   "appels": 165,
+   "fichiers": 53,
+   "signatures": {
+    "IDENT VEC IDENT": 73,
+    "IDENT IDENT IDENT": 90,
+    "INT VEC IDENT": 2
+   },
+   "exemples": [
+    "CreateCity Coal <45 97> enemy",
+    "CreateCity Nest <109 35> enemy",
+    "CreateCity Earth <204 18> enemy"
+   ]
+  },
+  "ClearHeightManager": {
+   "appels": 163,
+   "fichiers": 163,
+   "signatures": {
+    "": 163
+   },
+   "exemples": [
+    "ClearHeightManager",
+    "ClearHeightManager",
+    "ClearHeightManager"
+   ]
+  },
+  "SetHeightGridSize": {
+   "appels": 163,
+   "fichiers": 163,
+   "signatures": {
+    "INT": 155,
+    "FLOAT": 8
+   },
+   "exemples": [
+    "SetHeightGridSize 2560",
+    "SetHeightGridSize 2560",
+    "SetHeightGridSize 2560"
+   ]
+  },
+  "PutMessage": {
+   "appels": 160,
+   "fichiers": 58,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT IDENT IDENT": 15,
+    "IDENT IDENT INT IDENT IDENT IDENT IDENT": 2,
+    "IDENT": 30,
+    "IDENT IDENT": 11,
+    "IDENT IDENT IDENT": 47,
+    "IDENT IDENT IDENT IDENT IDENT": 12,
+    "IDENT IDENT IDENT IDENT": 36,
+    "VEC IDENT": 1,
+    "IDENT INT INT INT": 1,
+    "": 1,
+    "IDENT IDENT IDENT IDENT IDENT IDENT IDENT": 4
+   },
+   "exemples": [
+    "PutMessage slippy:179 naus:180 fox:181 slippy:182 fox:183 naus:184",
+    "PutMessage fox:185 slippy:186 187 fox:188 slippy:189 naus:190 fox:191",
+    "PutMessage NAUS_SETUMEI"
+   ]
+  },
+  "SetInfiniteView": {
+   "appels": 156,
+   "fichiers": 14,
+   "signatures": {
+    "IDENT": 156
+   },
+   "exemples": [
+    "SetInfiniteView TRUE",
+    "SetInfiniteView TRUE",
+    "SetInfiniteView TRUE"
+   ]
+  },
+  "SetActorState": {
+   "appels": 151,
+   "fichiers": 38,
+   "signatures": {
+    "IDENT IDENT IDENT": 151
+   },
+   "exemples": [
+    "SetActorState CallbackVariable Laser Twin",
+    "SetActorState CallbackVariable Bomb Smart",
+    "SetActorState CallbackVariable Laser Plasma"
+   ]
+  },
+  "SubVolume": {
+   "appels": 147,
+   "fichiers": 12,
+   "signatures": {
+    "IDENT INT INT INT INT INT INT": 4,
+    "IDENT INT INT INT FLOAT FLOAT FLOAT": 11,
+    "IDENT FLOAT INT INT FLOAT FLOAT FLOAT": 14,
+    "IDENT FLOAT INT INT FLOAT INT INT": 2,
+    "IDENT INT INT FLOAT FLOAT FLOAT FLOAT": 100,
+    "IDENT FLOAT FLOAT FLOAT FLOAT FLOAT FLOAT": 16
+   },
+   "exemples": [
+    "SubVolume BoltCopter 0 0 0 1 1 1",
+    "SubVolume Arwing 0 0 0 0.125 0.125 0.125",
+    "SubVolume Arwing 0.9375 0 0 0.0625 0.0625 0.0625"
+   ]
+  },
+  "RegistPlayer": {
+   "appels": 145,
+   "fichiers": 10,
+   "signatures": {
+    "IDENT": 144,
+    "": 1
+   },
+   "exemples": [
+    "RegistPlayer fox",
+    "RegistPlayer krystal",
+    "RegistPlayer falco"
+   ]
+  },
+  "SetTarget": {
+   "appels": 136,
+   "fichiers": 13,
+   "signatures": {
+    "": 136
+   },
+   "exemples": [
+    "SetTarget",
+    "SetTarget",
+    "SetTarget"
+   ]
+  },
+  "CreateNumber": {
+   "appels": 130,
+   "fichiers": 41,
+   "signatures": {
+    "IDENT IDENT IDENT VEC VEC IDENT VEC VEC INT INT INT IDENT IDENT": 108,
+    "IDENT IDENT IDENT VEC VEC IDENT VEC VEC INT INT INT": 11,
+    "IDENT IDENT IDENT VEC VEC IDENT VEC VEC INT INT INT INT": 1,
+    "IDENT IDENT IDENT VEC VEC IDENT VEC VEC INT INT INT IDENT IDENT IDENT": 7,
+    "IDENT IDENT IDENT VEC VEC IDENT VEC VEC INT INT INT IDENT IDENT IDENT IDENT": 3
+   },
+   "exemples": [
+    "CreateNumber win_1 board_1 num_tex <33 11> <9 13> right <118 4> <27 13> 0 31 15\t\t\t# Win数",
+    "CreateNumber win_2 board_2 num_tex <33 11> <9 13> right <118 4> <27 13> 0 31 15\t\t\t# Win数",
+    "CreateNumber win_3 board_3 num_tex <33 11> <9 13> right <118 4> <27 13> 0 31 15\t\t\t# Win数"
+   ]
+  },
+  "SetTextureSet": {
+   "appels": 130,
+   "fichiers": 13,
+   "signatures": {
+    "PATH": 130
+   },
+   "exemples": [
+    "SetTextureSet /3D/Enemy/PorcupineFish/PorcupineFish.tset",
+    "SetTextureSet /3D/Enemy/MantaRay/MantaRay.tset",
+    "SetTextureSet /3D/Enemy/AstMine/AstMine.tset"
+   ]
+  },
+  "FinishScenarioPart": {
+   "appels": 123,
+   "fichiers": 48,
+   "signatures": {
+    "IDENT IDENT": 48,
+    "": 75
+   },
+   "exemples": [
+    "FinishScenarioPart\t# ストラテジーマップへ",
+    "FinishScenarioPart",
+    "FinishScenarioPart"
+   ]
+  },
+  "RegistWeapon": {
+   "appels": 122,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT": 122
+   },
+   "exemples": [
+    "RegistWeapon RegularLaser",
+    "RegistWeapon Beam",
+    "RegistWeapon RingLaserA"
+   ]
+  },
+  "SetSubVolume": {
+   "appels": 112,
+   "fichiers": 9,
+   "signatures": {
+    "VEC VEC": 112
+   },
+   "exemples": [
+    "SetSubVolume <0 0 -0.3> <0.2 0.2 0.2>",
+    "SetSubVolume <0 0 0.3> <0.2 0.2 0.2>",
+    "SetSubVolume <0 0 0> <0.2 0.2 0.2>"
+   ]
+  },
+  "CreateMissile": {
+   "appels": 111,
+   "fichiers": 44,
+   "signatures": {
+    "IDENT IDENT": 105,
+    "PATH VEC": 5,
+    "IDENT VEC": 1
+   },
+   "exemples": [
+    "CreateMissile eMissileSimple Boss",
+    "CreateMissile /3D/Venom/Scripts/eLastAngler.txt <128 0>",
+    "CreateMissile eMissileSimple AnyCity"
+   ]
+  },
+  "CreateEnemy": {
+   "appels": 107,
+   "fichiers": 38,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT INT INT INT INT INT INT FLOAT FLOAT FLOAT": 103,
+    "IDENT IDENT IDENT IDENT INT INT INT": 4
+   },
+   "exemples": [
+    "CreateEnemy TriggerGate SeedTrigger BasicFlyVehicle ITEM_OBJECT 0 1000 0 0 90 0     1.5 1.5 1.5",
+    "CreateEnemy TriggerGate SeedTrigger BasicFlyVehicle ITEM_OBJECT -3800 500 -3800 0 0 0     1.5 1.5 1.5",
+    "CreateEnemy TriggerGate SeedTrigger BasicFlyVehicle ITEM_OBJECT -700 500 0 0 90 0     1.5 1.5 1.5"
+   ]
+  },
+  "SetMissionState": {
+   "appels": 102,
+   "fichiers": 58,
+   "signatures": {
+    "IDENT IDENT": 96,
+    "IDENT IDENT INT": 3,
+    "IDENT": 2,
+    "IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "SetMissionState ClearRule GetAllBase",
+    "SetMissionState ClearRule DestroyTargetEnemy 1",
+    "SetMissionState ClearRule GetAllBase"
+   ]
+  },
+  "SetButtonState": {
+   "appels": 102,
+   "fichiers": 19,
+   "signatures": {
+    "IDENT IDENT VEC VEC IDENT IDENT": 74,
+    "IDENT IDENT": 22,
+    "IDENT VEC": 3,
+    "IDENT IDENT VEC VEC": 3
+   },
+   "exemples": [
+    "SetButtonState set_texture TextureMain <0 112> <96 16>\t\t# ボタンにテクスチャの設定",
+    "SetButtonState set_texture TextureMain <0 112> <96 16>\t\t# ボタンにテクスチャの設定",
+    "SetButtonState set_texture TextureMain <0 112> <96 16>\t\t# ボタンにテクスチャの設定"
+   ]
+  },
+  "SetBattleMessage": {
+   "appels": 99,
+   "fichiers": 6,
+   "signatures": {
+    "INT IDENT IDENT IDENT": 93,
+    "INT IDENT IDENT": 6
+   },
+   "exemples": [
+    "SetBattleMessage 20521 oikonny SHORT HIGH",
+    "SetBattleMessage 20522 oikonny SHORT HIGH",
+    "SetBattleMessage 20523 oikonny SHORT"
+   ]
+  },
+  "CreateButton": {
+   "appels": 99,
+   "fichiers": 19,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT": 11,
+    "IDENT IDENT IDENT": 1,
+    "IDENT IDENT IDENT INT": 3,
+    "IDENT IDENT IDENT IDENT IDENT": 4,
+    "IDENT PATH IDENT IDENT": 14,
+    "IDENT IDENT PATH IDENT IDENT": 1,
+    "IDENT IDENT": 16,
+    "IDENT PATH": 1,
+    "IDENT IDENT IDENT INT IDENT IDENT": 47,
+    "IDENT PATH IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "CreateButton ButtonTest1 function:StartDebugScene\t\t# ボタンの作成",
+    "CreateButton ButtonTest2 function:StartDebugScene Challange",
+    "CreateButton ButtonTest3 function:StartAdvatise Prologue 1"
+   ]
+  },
+  "RegistTextArea": {
+   "appels": 90,
+   "fichiers": 20,
+   "signatures": {
+    "IDENT IDENT VEC IDENT": 78,
+    "IDENT IDENT VEC IDENT IDENT IDENT IDENT": 12
+   },
+   "exemples": [
+    "RegistTextArea name_tex_1 Menu/Shared/net_name_1 <64 16> PLTT4",
+    "RegistTextArea name_tex_2 Menu/Shared/net_name_2 <64 16> PLTT4",
+    "RegistTextArea name_tex_3 Menu/Shared/net_name_3 <64 16> PLTT4"
+   ]
+  },
+  "RegistBillboard": {
+   "appels": 89,
+   "fichiers": 29,
+   "signatures": {
+    "IDENT PATH": 89
+   },
+   "exemples": [
+    "RegistBillboard MP_Yellow_Ring /3D/Starfox/Item/Yellow_Ring.mdl",
+    "RegistBillboard Yellow_Ring /3D/Starfox/Item/Yellow_Ring.mdl",
+    "RegistBillboard Atom /3D/Starfox/Item/AtomG.mdl"
+   ]
+  },
+  "SetBillboard": {
+   "appels": 88,
+   "fichiers": 10,
+   "signatures": {
+    "IDENT PATH": 88
+   },
+   "exemples": [
+    "SetBillboard Bubble /3D/Enemy/Weapon/Bubble.mdl",
+    "SetBillboard BubbleBurst /3D/Enemy/Weapon/Burst.mdl",
+    "SetBillboard MijinkoJoint /3D/Enemy/Mijinko/Ball.mdl"
+   ]
+  },
+  "RegistPlayerState": {
+   "appels": 87,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 87
+   },
+   "exemples": [
+    "RegistPlayerState\t\tnaus",
+    "RegistPlayerState\t\tfox",
+    "RegistPlayerState\t\tkrystal"
+   ]
+  },
+  "EnableSkip": {
+   "appels": 85,
+   "fichiers": 38,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT IDENT": 81,
+    "": 4
+   },
+   "exemples": [
+    "EnableSkip\t# skip command 1. ここから先、省略可能とする",
+    "EnableSkip\t# skip command 1. ここから先、省略可能とする",
+    "EnableSkip\t# skip command 1. ここから先、省略可能とする"
+   ]
+  },
+  "DisableSkip": {
+   "appels": 85,
+   "fichiers": 38,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT IDENT": 81,
+    "": 4
+   },
+   "exemples": [
+    "DisableSkip\t# skip command 2. ここから先、省略禁止。また、スキップする事が出来るのもここまで",
+    "DisableSkip\t# skip command 2. ここから先、省略禁止。また、スキップする事が出来るのもここまで",
+    "DisableSkip\t# skip command 2. ここから先、省略禁止。また、スキップする事が出来るのもここまで"
+   ]
+  },
+  "SetModelName": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetModelName\t\t\tFoxArwing",
+    "SetModelName\t\t\tKrystalArwing",
+    "SetModelName\t\t\tFalcoArwing"
+   ]
+  },
+  "SetBoostOnName": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetBoostOnName\t\t\tFoxArwingOn",
+    "SetBoostOnName\t\t\tKrystalArwingOn",
+    "SetBoostOnName\t\t\tFalcoArwingOn"
+   ]
+  },
+  "SetBoostOffName": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetBoostOffName\t\t\tFoxArwingOff",
+    "SetBoostOffName\t\t\tKrystalArwingOff",
+    "SetBoostOffName\t\t\tFalcoArwingOff"
+   ]
+  },
+  "SetBoostEffectName": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetBoostEffectName\t\tFoxArwingBoost",
+    "SetBoostEffectName\t\tKrystalArwingBoost",
+    "SetBoostEffectName\t\tFalcoArwingBoost"
+   ]
+  },
+  "SetWingEffectOffset": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "VEC": 79
+   },
+   "exemples": [
+    "SetWingEffectOffset\t\t<2.6 -0.092 -3.042>",
+    "SetWingEffectOffset\t\t<3.138 -0.381 0.674>",
+    "SetWingEffectOffset\t\t<4.154 -0.686 0.322>"
+   ]
+  },
+  "SetSingleLaserOffset": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "VEC": 79
+   },
+   "exemples": [
+    "SetSingleLaserOffset\t<0 -0.02 3.259>",
+    "SetSingleLaserOffset\t<0.034 -0.071 1.737>",
+    "SetSingleLaserOffset\t<0 0 2.66>"
+   ]
+  },
+  "SetTwinLaserOffset": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "VEC": 79
+   },
+   "exemples": [
+    "SetTwinLaserOffset\t\t<1.945 -0.049 -1.593>",
+    "SetTwinLaserOffset\t\t<1.544 -0.324 1.691>",
+    "SetTwinLaserOffset\t\t<1.312 0.018 1.218>"
+   ]
+  },
+  "SetLaserType": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetLaserType\t\t\tSingle",
+    "SetLaserType\t\t\tTwin",
+    "SetLaserType\t\t\tSingle"
+   ]
+  },
+  "SetLockType": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetLockType\t\t\t\tSingle",
+    "SetLockType\t\t\t\tSingle",
+    "SetLockType\t\t\t\tMulti"
+   ]
+  },
+  "SetBomb": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "INT": 79
+   },
+   "exemples": [
+    "SetBomb\t\t\t\t\t2",
+    "SetBomb\t\t\t\t\t1",
+    "SetBomb\t\t\t\t\t1"
+   ]
+  },
+  "SetShield": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetShield\t\t\t\tMiddle",
+    "SetShield\t\t\t\tMiddle",
+    "SetShield\t\t\t\tSmall"
+   ]
+  },
+  "SetBoost": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetBoost\t\t\t\tLarge",
+    "SetBoost\t\t\t\tMiddle",
+    "SetBoost\t\t\t\tLarge"
+   ]
+  },
+  "SetTimeBonus": {
+   "appels": 79,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 79
+   },
+   "exemples": [
+    "SetTimeBonus\t\t\tDisable",
+    "SetTimeBonus\t\t\tDisable",
+    "SetTimeBonus\t\t\tEnable"
+   ]
+  },
+  "AddPathRot": {
+   "appels": 78,
+   "fichiers": 4,
+   "signatures": {
+    "FLOAT FLOAT FLOAT FLOAT": 78
+   },
+   "exemples": [
+    "AddPathRot \t2.0 \t0.0\t0.0\t0.0",
+    "AddPathRot \t1.0 \t0.0\t90.0\t0.0",
+    "AddPathRot \t2.0 \t0.0\t90.0\t0.0"
+   ]
+  },
+  "AddPathPos": {
+   "appels": 75,
+   "fichiers": 5,
+   "signatures": {
+    "FLOAT INT INT INT": 2,
+    "FLOAT INT INT FLOAT": 4,
+    "FLOAT FLOAT INT FLOAT": 10,
+    "FLOAT FLOAT INT INT": 4,
+    "FLOAT FLOAT FLOAT FLOAT": 55
+   },
+   "exemples": [
+    "AddPathPos 6.5 0 0 0",
+    "AddPathPos 6.5 0 0 531.69677",
+    "AddPathPos 6.5 8.95183 0 1062.98632"
+   ]
+  },
+  "NextMission": {
+   "appels": 75,
+   "fichiers": 48,
+   "signatures": {
+    "IDENT INT": 69,
+    "IDENT INT IDENT": 6
+   },
+   "exemples": [
+    "NextMission Venom 0",
+    "NextMission Sector 0",
+    "NextMission Ending 7   #end"
+   ]
+  },
+  "OpenDebateScreen": {
+   "appels": 75,
+   "fichiers": 29,
+   "signatures": {
+    "IDENT": 73,
+    "IDENT IDENT": 2
+   },
+   "exemples": [
+    "OpenDebateScreen Menu/SPart/d_machine",
+    "OpenDebateScreen Menu/SPart/data_venom_sea",
+    "OpenDebateScreen Menu/SPart/data_venom_sea"
+   ]
+  },
+  "CloseDebateScreen": {
+   "appels": 74,
+   "fichiers": 29,
+   "signatures": {
+    "": 74
+   },
+   "exemples": [
+    "CloseDebateScreen",
+    "CloseDebateScreen",
+    "CloseDebateScreen"
+   ]
+  },
+  "ClearBackGround": {
+   "appels": 73,
+   "fichiers": 73,
+   "signatures": {
+    "": 73
+   },
+   "exemples": [
+    "ClearBackGround",
+    "ClearBackGround",
+    "ClearBackGround"
+   ]
+  },
+  "SetBackGroundColor": {
+   "appels": 72,
+   "fichiers": 72,
+   "signatures": {
+    "INT INT INT": 72
+   },
+   "exemples": [
+    "SetBackGroundColor 0 0 0",
+    "SetBackGroundColor 0 0 0",
+    "SetBackGroundColor 0 0 0"
+   ]
+  },
+  "CreateMarker": {
+   "appels": 71,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT VEC VEC VEC": 71
+   },
+   "exemples": [
+    "CreateMarker mSemirossiaHand <-389.1058 449.1505 -2385.436> <0 88 0> <1 1 1>",
+    "CreateMarker mSemirossiaHand <-400.6726 471.6853 2071.523> <0 88 0> <1 1 1>",
+    "CreateMarker mSemirossiaHand <-400.0113 449.1505 -3045.578> <0 88 0> <1 1 1>"
+   ]
+  },
+  "MissionInit": {
+   "appels": 60,
+   "fichiers": 60,
+   "signatures": {
+    "": 60
+   },
+   "exemples": [
+    "MissionInit",
+    "MissionInit",
+    "MissionInit"
+   ]
+  },
+  "ZoneInfo": {
+   "appels": 59,
+   "fichiers": 12,
+   "signatures": {
+    "INT IDENT": 57,
+    "INT IDENT IDENT IDENT": 1,
+    "INT IDENT IDENT": 1
+   },
+   "exemples": [
+    "ZoneInfo 1 Trench",
+    "ZoneInfo 2 Flatland",
+    "ZoneInfo 3 Mountain"
+   ]
+  },
+  "SetPathLoop": {
+   "appels": 58,
+   "fichiers": 12,
+   "signatures": {
+    "IDENT": 58
+   },
+   "exemples": [
+    "SetPathLoop true",
+    "SetPathLoop true",
+    "SetPathLoop true"
+   ]
+  },
+  "CreateMission": {
+   "appels": 58,
+   "fichiers": 58,
+   "signatures": {
+    "IDENT INT": 58
+   },
+   "exemples": [
+    "CreateMission Corneria 3",
+    "CreateMission Venom 99",
+    "CreateMission Venom 4"
+   ]
+  },
+  "CreateStrategyMap": {
+   "appels": 58,
+   "fichiers": 58,
+   "signatures": {
+    "IDENT INT": 58
+   },
+   "exemples": [
+    "CreateStrategyMap Corneria 1",
+    "CreateStrategyMap Venom 0",
+    "CreateStrategyMap Venom 1"
+   ]
+  },
+  "CreateBattleMessage": {
+   "appels": 55,
+   "fichiers": 6,
+   "signatures": {
+    "IDENT": 40,
+    "IDENT IDENT": 15
+   },
+   "exemples": [
+    "CreateBattleMessage Start",
+    "CreateBattleMessage Destroy",
+    "CreateBattleMessage DestroyParts"
+   ]
+  },
+  "SetBackgroundEffect": {
+   "appels": 52,
+   "fichiers": 52,
+   "signatures": {
+    "IDENT FLOAT INT": 52
+   },
+   "exemples": [
+    "SetBackgroundEffect Stars 500.0 4",
+    "SetBackgroundEffect Snow 900.0 4",
+    "SetBackgroundEffect Snow 900.0 4"
+   ]
+  },
+  "SetCallbackVariable": {
+   "appels": 49,
+   "fichiers": 11,
+   "signatures": {
+    "IDENT IDENT": 43,
+    "IDENT INT": 6
+   },
+   "exemples": [
+    "SetCallbackVariable ATTACK Bubble",
+    "SetCallbackVariable TYPE BOSS",
+    "SetCallbackVariable WOLFEN_PILOT SLIPPY"
+   ]
+  },
+  "MissileZoneInfo": {
+   "appels": 49,
+   "fichiers": 9,
+   "signatures": {
+    "INT IDENT": 49
+   },
+   "exemples": [
+    "MissileZoneInfo 1 Trench_Gr",
+    "MissileZoneInfo 2 Flatland_Gr",
+    "MissileZoneInfo 3 Mountain_Gr"
+   ]
+  },
+  "Prologue": {
+   "appels": 48,
+   "fichiers": 48,
+   "signatures": {
+    "IDENT IDENT": 48
+   },
+   "exemples": [
+    "Prologue\t# ミッション開始位置",
+    "Prologue\t# ミッション開始位置",
+    "Prologue\t# ミッション開始位置"
+   ]
+  },
+  "Epilogue": {
+   "appels": 48,
+   "fichiers": 48,
+   "signatures": {
+    "IDENT IDENT": 48
+   },
+   "exemples": [
+    "Epilogue\t# ミッションクリア後",
+    "Epilogue\t# ミッションクリア後",
+    "Epilogue\t# ミッションクリア後"
+   ]
+  },
+  "RegistSound": {
+   "appels": 46,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT INT": 46
+   },
+   "exemples": [
+    "RegistSound SE_Laser 1",
+    "RegistSound SE_Hit_Laser 1",
+    "RegistSound SE_Explosion 1"
+   ]
+  },
+  "CreateLODModel": {
+   "appels": 45,
+   "fichiers": 2,
+   "signatures": {
+    "IDENT INT INT IDENT IDENT IDENT IDENT": 45
+   },
+   "exemples": [
+    "CreateLODModel BK01 704 4000 BK01_LodA BK01_LodA BK01_LodC BK01_LodC",
+    "CreateLODModel BK02 704 4000 BK02_LodA BK02_LodA BK02_LodC BK02_LodC",
+    "CreateLODModel BK03 704 4000 BK03_LodA BK03_LodA BK03_LodC BK03_LodC"
+   ]
+  },
+  "CreateDesignButton": {
+   "appels": 44,
+   "fichiers": 11,
+   "signatures": {
+    "IDENT IDENT IDENT VEC VEC": 35,
+    "IDENT IDENT VEC": 9
+   },
+   "exemples": [
+    "CreateDesignButton Custom restart_button button_group <123 19> <0 0>",
+    "CreateDesignButton Custom gemeselect_button button_group <123 19> <0 35>",
+    "CreateDesignButton Custom title_button button_group <123 19> <0 60>"
+   ]
+  },
+  "Page": {
+   "appels": 43,
+   "fichiers": 12,
+   "signatures": {
+    "INT": 43
+   },
+   "exemples": [
+    "Page 1",
+    "Page 2",
+    "Page 3"
+   ]
+  },
+  "Image": {
+   "appels": 43,
+   "fichiers": 12,
+   "signatures": {
+    "IDENT": 43
+   },
+   "exemples": [
+    "Image\tAdv/Ending/As4_end_01",
+    "Image\tAdv/Ending/As4_end_02",
+    "Image\tAdv/Ending/As4_end_03"
+   ]
+  },
+  "Text": {
+   "appels": 43,
+   "fichiers": 12,
+   "signatures": {
+    "INT": 43
+   },
+   "exemples": [
+    "Text\t32036",
+    "Text\t32037",
+    "Text\t32038"
+   ]
+  },
+  "RegistModelFromSet": {
+   "appels": 41,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT IDENT IDENT": 41
+   },
+   "exemples": [
+    "RegistModelFromSet SeaA SeaA CorneriaSea",
+    "RegistModelFromSet SeaB SeaB CorneriaSea",
+    "RegistModelFromSet SeaC SeaC CorneriaSea"
+   ]
+  },
+  "VolumeFlags": {
+   "appels": 41,
+   "fichiers": 13,
+   "signatures": {
+    "IDENT IDENT": 41
+   },
+   "exemples": [
+    "VolumeFlags Arwing RotRelative",
+    "VolumeFlags Spider RotRelative",
+    "VolumeFlags BoltSpark RotRelative"
+   ]
+  },
+  "RemoteItemBegin": {
+   "appels": 38,
+   "fichiers": 38,
+   "signatures": {
+    "": 38
+   },
+   "exemples": [
+    "RemoteItemBegin",
+    "RemoteItemBegin",
+    "RemoteItemBegin"
+   ]
+  },
+  "RemoteItemEnd": {
+   "appels": 38,
+   "fichiers": 38,
+   "signatures": {
+    "": 38
+   },
+   "exemples": [
+    "RemoteItemEnd",
+    "RemoteItemEnd",
+    "RemoteItemEnd"
+   ]
+  },
+  "CreateFogMap": {
+   "appels": 38,
+   "fichiers": 38,
+   "signatures": {
+    "INT VEC IDENT": 38
+   },
+   "exemples": [
+    "CreateFogMap 0 <31 22 0 128> strong",
+    "CreateFogMap 0 <31 22 0 128> strong",
+    "CreateFogMap 0 <31 22 0 128> strong"
+   ]
+  },
+  "SetTitleBar": {
+   "appels": 30,
+   "fichiers": 30,
+   "signatures": {
+    "IDENT INT": 29,
+    "IDENT INT IDENT IDENT": 1
+   },
+   "exemples": [
+    "SetTitleBar Menu/Gallery/end_gallery_tl2 210",
+    "SetTitleBar Menu/Gallery/pilot_tl2 210",
+    "SetTitleBar Menu/Gallery/pilot_tl2 210"
+   ]
+  },
+  "CreateTexFlash": {
+   "appels": 28,
+   "fichiers": 7,
+   "signatures": {
+    "IDENT": 28
+   },
+   "exemples": [
+    "CreateTexFlash Flash0",
+    "CreateTexFlash Flash1",
+    "CreateTexFlash Flash2"
+   ]
+  },
+  "CreateFlashModel": {
+   "appels": 28,
+   "fichiers": 6,
+   "signatures": {
+    "IDENT": 26,
+    "IDENT IDENT": 1,
+    "": 1
+   },
+   "exemples": [
+    "CreateFlashModel DoorL_LodA",
+    "CreateFlashModel DoorL_LodB",
+    "CreateFlashModel DoorL_LodC"
+   ]
+  },
+  "SubVolumeMM": {
+   "appels": 24,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT INT INT INT INT FLOAT INT": 1,
+    "IDENT INT INT INT FLOAT INT INT": 8,
+    "IDENT FLOAT INT INT INT INT INT": 8,
+    "IDENT INT FLOAT INT INT INT INT": 6,
+    "IDENT FLOAT INT INT FLOAT INT INT": 1
+   },
+   "exemples": [
+    "SubVolumeMM GimickB -1 -1 -1 1 -0.8 1",
+    "SubVolumeMM GimickB -1 -1 -1 -0.8 1 1",
+    "SubVolumeMM GimickB 0.8 -1 -1 1 1 1"
+   ]
+  },
+  "SetSoldier": {
+   "appels": 24,
+   "fichiers": 8,
+   "signatures": {
+    "": 24
+   },
+   "exemples": [
+    "SetSoldier",
+    "SetSoldier",
+    "SetSoldier"
+   ]
+  },
+  "BranchScenario": {
+   "appels": 24,
+   "fichiers": 24,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT": 21,
+    "IDENT IDENT": 1,
+    "IDENT IDENT IDENT IDENT IDENT": 2
+   },
+   "exemples": [
+    "BranchScenario AnswerA:742 AnswerB:743\t# 分岐",
+    "BranchScenario AnswerA:2850 AnswerB:2851\t# 分岐",
+    "BranchScenario AnswerA:742 AnswerB:743\t# 分岐"
+   ]
+  },
+  "AnswerA": {
+   "appels": 24,
+   "fichiers": 24,
+   "signatures": {
+    "IDENT IDENT": 23,
+    "": 1
+   },
+   "exemples": [
+    "AnswerA\t# 分岐１",
+    "AnswerA\t# 分岐１",
+    "AnswerA\t# 分岐１"
+   ]
+  },
+  "AnswerB": {
+   "appels": 24,
+   "fichiers": 24,
+   "signatures": {
+    "IDENT IDENT": 22,
+    "IDENT IDENT INT": 1,
+    "": 1
+   },
+   "exemples": [
+    "AnswerB\t# 分岐２",
+    "AnswerB\t# 分岐 2",
+    "AnswerB\t# 分岐２"
+   ]
+  },
+  "EnableHologram": {
+   "appels": 24,
+   "fichiers": 20,
+   "signatures": {
+    "IDENT": 16,
+    "IDENT IDENT": 2,
+    "IDENT IDENT IDENT IDENT IDENT": 1,
+    "IDENT IDENT IDENT": 3,
+    "IDENT IDENT IDENT IDENT": 2
+   },
+   "exemples": [
+    "EnableHologram wolf",
+    "EnableHologram ash",
+    "EnableHologram peppy"
+   ]
+  },
+  "CreateTexAnimSeq": {
+   "appels": 20,
+   "fichiers": 11,
+   "signatures": {
+    "IDENT INT INT IDENT IDENT INT INT": 17,
+    "INT INT IDENT IDENT INT INT": 3
+   },
+   "exemples": [
+    "CreateTexAnimSeq ExpTest 64 64 PLTT16 rom:/3D/Textures/FX/Explosion/exp_test0 8 0",
+    "CreateTexAnimSeq Explosion 64 64 COMP4x4 rom:/3D/Textures/FX/Explosion/ExA_SP 16 1",
+    "CreateTexAnimSeq PlasmaBall 32 32 A3I5 rom:/3D/Textures/FX/EnemyFX/Charge 8 1"
+   ]
+  },
+  "PushTexAnimSeq": {
+   "appels": 20,
+   "fichiers": 11,
+   "signatures": {
+    "INT INT FLOAT": 20
+   },
+   "exemples": [
+    "PushTexAnimSeq 0 8 0.03",
+    "PushTexAnimSeq 0 16 0.03",
+    "PushTexAnimSeq 0 8 0.03"
+   ]
+  },
+  "RegistMessage": {
+   "appels": 20,
+   "fichiers": 18,
+   "signatures": {
+    "IDENT IDENT INT INT INT INT INT INT INT": 2,
+    "IDENT IDENT": 18
+   },
+   "exemples": [
+    "RegistMessage NAUS_SETUMEI naus:171 172 173 174 175 176 177 178",
+    "RegistMessage BARRIER_OPEN naus:245",
+    "RegistMessage MESSAGE_INTRO naus:171"
+   ]
+  },
+  "SetMenuFrame": {
+   "appels": 20,
+   "fichiers": 18,
+   "signatures": {
+    "IDENT VEC VEC": 20
+   },
+   "exemples": [
+    "SetMenuFrame TextureMain <0 0> <96 16>",
+    "SetMenuFrame TextureMain <0 0> <96 16>",
+    "SetMenuFrame TextureMain <0 0> <128 16>"
+   ]
+  },
+  "SetChildEffect": {
+   "appels": 19,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 19
+   },
+   "exemples": [
+    "SetChildEffect ElecBeam",
+    "SetChildEffect EnergyCharge",
+    "SetChildEffect Sand"
+   ]
+  },
+  "SetButtonTopPos": {
+   "appels": 18,
+   "fichiers": 16,
+   "signatures": {
+    "VEC": 18
+   },
+   "exemples": [
+    "SetButtonTopPos <78 42>",
+    "SetButtonTopPos <78 30>",
+    "SetButtonTopPos <78 42>"
+   ]
+  },
+  "SetButtonSpacing": {
+   "appels": 18,
+   "fichiers": 16,
+   "signatures": {
+    "VEC": 18
+   },
+   "exemples": [
+    "SetButtonSpacing <0 27>",
+    "SetButtonSpacing <0 24>",
+    "SetButtonSpacing <0 27>"
+   ]
+  },
+  "SetMarkerArg": {
+   "appels": 16,
+   "fichiers": 2,
+   "signatures": {
+    "IDENT IDENT": 16
+   },
+   "exemples": [
+    "SetMarkerArg Hand R",
+    "SetMarkerArg Hand L",
+    "SetMarkerArg Hand R"
+   ]
+  },
+  "SetEnemyCount": {
+   "appels": 16,
+   "fichiers": 8,
+   "signatures": {
+    "INT": 16
+   },
+   "exemples": [
+    "SetEnemyCount 4",
+    "SetEnemyCount 3",
+    "SetEnemyCount 3"
+   ]
+  },
+  "SetBranchPlanet": {
+   "appels": 15,
+   "fichiers": 15,
+   "signatures": {
+    "IDENT IDENT": 13,
+    "IDENT IDENT IDENT": 2
+   },
+   "exemples": [
+    "SetBranchPlanet Corneria Corneria",
+    "SetBranchPlanet Venom SectorY",
+    "SetBranchPlanet Titania Titania"
+   ]
+  },
+  "SetBranchMember": {
+   "appels": 14,
+   "fichiers": 14,
+   "signatures": {
+    "IDENT IDENT": 13,
+    "IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "SetBranchMember fox fox",
+    "SetBranchMember wolf fox",
+    "SetBranchMember wolf wolf"
+   ]
+  },
+  "CreatePath": {
+   "appels": 13,
+   "fichiers": 5,
+   "signatures": {
+    "IDENT IDENT IDENT": 13
+   },
+   "exemples": [
+    "CreatePath FlashBomberPath true true",
+    "CreatePath HoverPath1 false false",
+    "CreatePath TestPath true true"
+   ]
+  },
+  "TotalPage": {
+   "appels": 12,
+   "fichiers": 12,
+   "signatures": {
+    "INT": 12
+   },
+   "exemples": [
+    "TotalPage 3",
+    "TotalPage 3",
+    "TotalPage 3"
+   ]
+  },
+  "RegistEventMessage": {
+   "appels": 10,
+   "fichiers": 1,
+   "signatures": {
+    "INT IDENT INT INT INT": 10
+   },
+   "exemples": [
+    "RegistEventMessage 1 CFDAE 0 1 500",
+    "RegistEventMessage 2 CDA 1 1 500",
+    "RegistEventMessage 3 EDH 0 4 9000"
+   ]
+  },
+  "SetStageMode": {
+   "appels": 10,
+   "fichiers": 10,
+   "signatures": {
+    "IDENT": 10
+   },
+   "exemples": [
+    "SetStageMode Scroll",
+    "SetStageMode Scroll",
+    "SetStageMode Scroll"
+   ]
+  },
+  "SetHeightInformer": {
+   "appels": 10,
+   "fichiers": 10,
+   "signatures": {
+    "IDENT": 10
+   },
+   "exemples": [
+    "SetHeightInformer Linear",
+    "SetHeightInformer Linear",
+    "SetHeightInformer Linear"
+   ]
+  },
+  "SetItem": {
+   "appels": 10,
+   "fichiers": 10,
+   "signatures": {
+    "INT": 10
+   },
+   "exemples": [
+    "SetItem 0",
+    "SetItem 0",
+    "SetItem 0"
+   ]
+  },
+  "RegistStageClear": {
+   "appels": 10,
+   "fichiers": 10,
+   "signatures": {
+    "": 10
+   },
+   "exemples": [
+    "RegistStageClear",
+    "RegistStageClear",
+    "RegistStageClear"
+   ]
+  },
+  "RegistStageLayerClear": {
+   "appels": 10,
+   "fichiers": 10,
+   "signatures": {
+    "": 10
+   },
+   "exemples": [
+    "RegistStageLayerClear",
+    "RegistStageLayerClear",
+    "RegistStageLayerClear"
+   ]
+  },
+  "SetBranchLevel": {
+   "appels": 9,
+   "fichiers": 9,
+   "signatures": {
+    "IDENT IDENT": 8,
+    "IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "SetBranchLevel none none",
+    "SetBranchLevel none none",
+    "SetBranchLevel none gold"
+   ]
+  },
+  "GreatFoxMovesTo": {
+   "appels": 8,
+   "fichiers": 8,
+   "signatures": {
+    "IDENT": 6,
+    "VEC": 2
+   },
+   "exemples": [
+    "GreatFoxMovesTo Corneria",
+    "GreatFoxMovesTo Corneria",
+    "GreatFoxMovesTo Corneria"
+   ]
+  },
+  "CreateMissileCapsule": {
+   "appels": 8,
+   "fichiers": 5,
+   "signatures": {
+    "VEC": 8
+   },
+   "exemples": [
+    "CreateMissileCapsule <200 160>",
+    "CreateMissileCapsule <90 116>",
+    "CreateMissileCapsule <138 20>"
+   ]
+  },
+  "PushIndexAnimSeq": {
+   "appels": 7,
+   "fichiers": 7,
+   "signatures": {
+    "INT INT INT INT FLOAT": 7
+   },
+   "exemples": [
+    "PushIndexAnimSeq 64 64 0 16 0.03",
+    "PushIndexAnimSeq 64 64 0 16 0.03",
+    "PushIndexAnimSeq 64 64 0 16 0.03"
+   ]
+  },
+  "EndSkip": {
+   "appels": 7,
+   "fichiers": 7,
+   "signatures": {
+    "": 7
+   },
+   "exemples": [
+    "EndSkip",
+    "EndSkip",
+    "EndSkip"
+   ]
+  },
+  "startBgm": {
+   "appels": 7,
+   "fichiers": 7,
+   "signatures": {
+    "INT": 7
+   },
+   "exemples": [
+    "startBgm 1",
+    "startBgm 1",
+    "startBgm 1"
+   ]
+  },
+  "KeepSkip": {
+   "appels": 7,
+   "fichiers": 7,
+   "signatures": {
+    "": 7
+   },
+   "exemples": [
+    "KeepSkip",
+    "KeepSkip",
+    "KeepSkip"
+   ]
+  },
+  "OverrideMainBG": {
+   "appels": 7,
+   "fichiers": 6,
+   "signatures": {
+    "IDENT IDENT IDENT": 3,
+    "PATH IDENT": 1,
+    "IDENT": 3
+   },
+   "exemples": [
+    "OverrideMainBG Menu/SPart/EnemyBG1       #下画面の背景を変更する。会話中に何度も変更出来るようにするため、画像形式は固定。4x4. 256x128.",
+    "OverrideMainBG Menu/SPart/EnemyBG1#下画面の背景を変更する。会話中に何度も変更出来るようにするため、画像形式は固定。4x4. 256x128.",
+    "OverrideMainBG Menu/SPart/EnemyBG1       #下画面の背景を変更する。会話中に何度も変更出来るようにするため、画像形式は固定。4x4. 256x128."
+   ]
+  },
+  "CreateArea": {
+   "appels": 7,
+   "fichiers": 7,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT IDENT": 7
+   },
+   "exemples": [
+    "CreateArea heavy [ zone:3 ] move",
+    "CreateArea heavy [ zone:6 ] move",
+    "CreateArea heavy [ zone:9 ] move"
+   ]
+  },
+  "SetBackGroundRotate": {
+   "appels": 6,
+   "fichiers": 3,
+   "signatures": {
+    "INT": 6
+   },
+   "exemples": [
+    "SetBackGroundRotate 11",
+    "SetBackGroundRotate -17",
+    "SetBackGroundRotate -3"
+   ]
+  },
+  "SetNonEnemy": {
+   "appels": 5,
+   "fichiers": 2,
+   "signatures": {
+    "": 5
+   },
+   "exemples": [
+    "SetNonEnemy",
+    "SetNonEnemy",
+    "SetNonEnemy"
+   ]
+  },
+  "SetMemberWeapon": {
+   "appels": 5,
+   "fichiers": 4,
+   "signatures": {
+    "IDENT IDENT IDENT": 5
+   },
+   "exemples": [
+    "SetMemberWeapon fox Laser Plasma",
+    "SetMemberWeapon fox Laser Twin",
+    "SetMemberWeapon fox Laser Twin"
+   ]
+  },
+  "CreateTimeCapsule": {
+   "appels": 5,
+   "fichiers": 4,
+   "signatures": {
+    "VEC": 5
+   },
+   "exemples": [
+    "CreateTimeCapsule <70 65>",
+    "CreateTimeCapsule <169 139>",
+    "CreateTimeCapsule <142 104>"
+   ]
+  },
+  "EnableEnemyTemplate": {
+   "appels": 4,
+   "fichiers": 4,
+   "signatures": {
+    "IDENT": 4
+   },
+   "exemples": [
+    "EnableEnemyTemplate eLimbo",
+    "EnableEnemyTemplate eBakula",
+    "EnableEnemyTemplate eLimbo"
+   ]
+  },
+  "SetPos": {
+   "appels": 4,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT INT VEC": 4
+   },
+   "exemples": [
+    "SetPos PLAYER 0 <0.0 800.0 0.0>",
+    "SetPos CAMERA 0 <8.0 0.0 35.0>",
+    "SetPos OBJECT 0 <0.0 800.0 0.0>"
+   ]
+  },
+  "ResetMainBG": {
+   "appels": 4,
+   "fichiers": 4,
+   "signatures": {
+    "IDENT": 4
+   },
+   "exemples": [
+    "ResetMainBG     #下画面の背景を戻す",
+    "ResetMainBG     #下画面の背景を戻す",
+    "ResetMainBG     #下画面の背景を戻す"
+   ]
+  },
+  "SetBackGroundTranslate": {
+   "appels": 3,
+   "fichiers": 3,
+   "signatures": {
+    "INT INT INT INT": 3
+   },
+   "exemples": [
+    "SetBackGroundTranslate 0 7000 0 700",
+    "SetBackGroundTranslate 0 7000 0 700",
+    "SetBackGroundTranslate 0 7000 0 700"
+   ]
+  },
+  "setPathLoop": {
+   "appels": 3,
+   "fichiers": 3,
+   "signatures": {
+    "IDENT": 3
+   },
+   "exemples": [
+    "setPathLoop true",
+    "setPathLoop true",
+    "setPathLoop true"
+   ]
+  },
+  "AnswerC": {
+   "appels": 3,
+   "fichiers": 3,
+   "signatures": {
+    "IDENT IDENT": 3
+   },
+   "exemples": [
+    "AnswerC\t# 分岐１",
+    "AnswerC\t# 分岐３",
+    "AnswerC\t# 分岐３"
+   ]
+  },
+  "CreateShieldCapsule": {
+   "appels": 3,
+   "fichiers": 3,
+   "signatures": {
+    "VEC": 3
+   },
+   "exemples": [
+    "CreateShieldCapsule <34 106>",
+    "CreateShieldCapsule <80 80>",
+    "CreateShieldCapsule <128 42>"
+   ]
+  },
+  "RegistCorrectCommand": {
+   "appels": 2,
+   "fichiers": 1,
+   "signatures": {
+    "INT IDENT": 2
+   },
+   "exemples": [
+    "RegistCorrectCommand 1 CDA",
+    "RegistCorrectCommand 2 BD"
+   ]
+  },
+  "CreateRoundCapsule": {
+   "appels": 2,
+   "fichiers": 2,
+   "signatures": {
+    "VEC": 2
+   },
+   "exemples": [
+    "CreateRoundCapsule <40 35>",
+    "CreateRoundCapsule <40 35>"
+   ]
+  },
+  "SetWaitTime": {
+   "appels": 2,
+   "fichiers": 1,
+   "signatures": {
+    "FLOAT": 2
+   },
+   "exemples": [
+    "SetWaitTime 1.0",
+    "SetWaitTime 10.0"
+   ]
+  },
+  "ScenarioIfNot": {
+   "appels": 2,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT": 2
+   },
+   "exemples": [
+    "ScenarioIfNot first_play",
+    "ScenarioIfNot first_play"
+   ]
+  },
+  "ScenarioEndIf": {
+   "appels": 2,
+   "fichiers": 1,
+   "signatures": {
+    "": 2
+   },
+   "exemples": [
+    "ScenarioEndIf",
+    "ScenarioEndIf"
+   ]
+  },
+  "CreateArwingRefresh": {
+   "appels": 2,
+   "fichiers": 2,
+   "signatures": {
+    "": 2
+   },
+   "exemples": [
+    "CreateArwingRefresh",
+    "CreateArwingRefresh"
+   ]
+  },
+  "LoadAnimSequence": {
+   "appels": 2,
+   "fichiers": 1,
+   "signatures": {
+    "PATH IDENT IDENT": 2
+   },
+   "exemples": [
+    "LoadAnimSequence rom:/3D/Starfox/Flag/FlagBlue_Flow.anim Flow FlagBlue",
+    "LoadAnimSequence rom:/3D/Starfox/Flag/FlagRed_Flow.anim Flow FlagRed"
+   ]
+  },
+  "oh": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT IDENT IDENT IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "oh by#this file is setup of effect"
+   ]
+  },
+  "Version": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT INT IDENT": 1
+   },
+   "exemples": [
+    "Version mantabuilder 20060926 20:46"
+   ]
+  },
+  "CreateSection": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "INT INT INT INT INT INT": 1
+   },
+   "exemples": [
+    "CreateSection 0 -1 0 0 0 0"
+   ]
+  },
+  "BeginSection": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "INT": 1
+   },
+   "exemples": [
+    "BeginSection 0"
+   ]
+  },
+  "RegistAnim": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT PATH": 1
+   },
+   "exemples": [
+    "RegistAnim A_walker_Walk rom:/Test_A_Walker_Walk.nsbca"
+   ]
+  },
+  "PushAnim": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT IDENT IDENT": 1
+   },
+   "exemples": [
+    "PushAnim A_Walker Walk A_walker_Walk"
+   ]
+  },
+  "CreateBounds": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT IDENT": 1
+   },
+   "exemples": [
+    "CreateBounds A_Walker A_Walker"
+   ]
+  },
+  "SetBackGroundProjFlag": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT": 1
+   },
+   "exemples": [
+    "SetBackGroundProjFlag false"
+   ]
+  },
+  "SetBackGroundScale": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "FLOAT FLOAT FLOAT": 1
+   },
+   "exemples": [
+    "SetBackGroundScale 1.0 1.0 1.0"
+   ]
+  },
+  "SetBackGroundZHack": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "FLOAT": 1
+   },
+   "exemples": [
+    "SetBackGroundZHack 0.5"
+   ]
+  },
+  "SetBackgroundColor": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "INT INT INT": 1
+   },
+   "exemples": [
+    "SetBackgroundColor 0 0 0"
+   ]
+  },
+  "StartSetup": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT": 1
+   },
+   "exemples": [
+    "StartSetup DemoObject0"
+   ]
+  },
+  "LoadMesh": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "PATH": 1
+   },
+   "exemples": [
+    "LoadMesh /3D/Enemy/ShellWalker/ShellWalker.mdl"
+   ]
+  },
+  "LoadAnim": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "PATH": 1
+   },
+   "exemples": [
+    "LoadAnim /3D/Enemy/ShellWalker/Walk.anim"
+   ]
+  },
+  "EndSetup": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "": 1
+   },
+   "exemples": [
+    "EndSetup"
+   ]
+  },
+  "CreateCamera": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "INT FLOAT": 1
+   },
+   "exemples": [
+    "CreateCamera 64 0.0"
+   ]
+  },
+  "SetCoordinate": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT INT IDENT IDENT INT FLOAT": 1
+   },
+   "exemples": [
+    "SetCoordinate CAMERA 0 LOCAL PLAYER 0 0.0"
+   ]
+  },
+  "LookAtThing": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT INT IDENT INT VEC FLOAT": 1
+   },
+   "exemples": [
+    "LookAtThing CAMERA 0 PLAYER 0 <0.0 0.0 0.0> 1.0"
+   ]
+  },
+  "LabelStageSelectNext": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "": 1
+   },
+   "exemples": [
+    "LabelStageSelectNext"
+   ]
+  },
+  "AddWeakPoint": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "VEC VEC": 1
+   },
+   "exemples": [
+    "AddWeakPoint <0.0 1.0 0.0> <0.6 0.6 0.6>"
+   ]
+  },
+  "AnswerD": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "IDENT IDENT": 1
+   },
+   "exemples": [
+    "AnswerD\t# 分岐２"
+   ]
+  },
+  "LabelCorneriaNext": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "": 1
+   },
+   "exemples": [
+    "LabelCorneriaNext"
+   ]
+  },
+  "f": {
+   "appels": 1,
+   "fichiers": 1,
+   "signatures": {
+    "": 1
+   },
+   "exemples": [
+    "f"
+   ]
+  }
+ },
+ "commentees_seulement": {
+  "AddWaitTime": 1,
+  "AddWeakPointVolume": 26,
+  "Amanda": 1,
+  "Aquas": 14,
+  "Arwing": 89,
+  "Ash": 8,
+  "Asteroid": 11,
+  "AsteroidBelt": 3,
+  "Back": 20,
+  "Bill": 1,
+  "Boss": 12,
+  "Button": 2,
+  "Cancel": 4,
+  "Cat": 1,
+  "City": 3,
+  "Clouds": 1,
+  "Code": 2,
+  "Confirm": 2,
+  "Corneria": 11,
+  "CreateBackGround": 2,
+  "CreateEnemy2": 1,
+  "CreateMissileEnemy": 2,
+  "CreatePlayer": 1,
+  "CreateShadow": 1,
+  "Dummy": 19,
+  "Dune": 1,
+  "Each": 7,
+  "End": 2,
+  "Enemy": 296,
+  "EnemyEgg": 10,
+  "Exchange": 1,
+  "Fake": 1,
+  "Falco": 8,
+  "Fichina": 1,
+  "Fog": 72,
+  "Fox": 8,
+  "Friend": 10,
+  "Gallery": 1,
+  "Grass": 2,
+  "Ground": 175,
+  "Hack": 1,
+  "HighDune": 1,
+  "James": 1,
+  "Jodie": 1,
+  "Katarina": 7,
+  "Krystal": 8,
+  "Labe": 1,
+  "Leon": 8,
+  "Life": 95,
+  "Load": 2,
+  "LoadScript": 1,
+  "Lock": 43,
+  "LookAtPos": 1,
+  "LookInDirection": 1,
+  "Lucy": 1,
+  "Marker": 11,
+  "Menu": 2,
+  "Missile": 1,
+  "Mission": 58,
+  "Mountain": 3,
+  "MoveAlong": 1,
+  "MoveToPos": 2,
+  "MoveToThing": 3,
+  "Multi": 8,
+  "Network": 8,
+  "Next": 2,
+  "Oasis": 1,
+  "Octman": 8,
+  "OrbitPos": 2,
+  "Panther": 8,
+  "Peppy": 1,
+  "Planet": 2,
+  "Plasma": 43,
+  "Pulse": 7,
+  "Recording2_D": 1,
+  "Recording_D": 1,
+  "Regist": 323,
+  "RegistFlashModelSet": 1,
+  "RegistStageBase": 4,
+  "Retry": 1,
+  "RockBarrel": 1,
+  "RockGull": 2,
+  "Ruin": 1,
+  "Rule": 32,
+  "Sample": 131,
+  "Sea": 3,
+  "Set": 2,
+  "SetBackGroundPos": 2,
+  "SetBackGroundRotateX": 1,
+  "SetBackGroundRotateZ": 1,
+  "SetBackGroundYHack": 2,
+  "SetRot": 1,
+  "SetScale": 2,
+  "SetSpeed": 1,
+  "Shared": 7,
+  "Shrimp": 2,
+  "Single": 1,
+  "Slippy": 8,
+  "Snow": 1,
+  "Solar": 8,
+  "Space": 3,
+  "Stage": 143,
+  "Stealth": 43,
+  "Sticky": 1,
+  "Target": 21,
+  "Texture": 9,
+  "Titania": 9,
+  "Training": 2,
+  "Universal": 59,
+  "UnlockScenario": 4,
+  "Venom": 9,
+  "Volcanobase": 1,
+  "Weapon": 14,
+  "WiFi": 1,
+  "Wifi": 1,
+  "Wolf": 8,
+  "Zone": 13
+ }
+}

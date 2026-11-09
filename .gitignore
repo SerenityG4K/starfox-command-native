@@ -1,0 +1,84 @@
+# ---------------------------------------------------------------------------
+# Aucune donnée du jeu ne doit entrer dans le dépôt.
+# Les outils travaillent sur la copie personnelle de la ROM de chaque
+# contributeur ; rien de ce qui en sort n'est redistribuable.
+# ---------------------------------------------------------------------------
+*.nds
+*.srl
+*.sdat
+*.sadl
+
+# Le dossier de données est la cartouche découpée en fichiers : même contenu,
+# même interdiction de le versionner. On le refabrique avec tools/build_data.py.
+data/
+
+assets/extracted/
+assets/cooked/
+assets/export/
+assets/text/
+assets/audio/
+assets/*.json
+
+# Les captures du moteur montrent les modèles et textures d'origine :
+# ce sont des données dérivées, elles ne se versionnent pas davantage.
+assets/*.png
+assets/*.jpg
+
+# ---------------------------------------------------------------------------
+# Artefacts de construction
+# ---------------------------------------------------------------------------
+build/
+out/
+*.o
+*.obj
+*.a
+*.lib
+*.exe
+*.dll
+*.pdb
+*.ilk
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------------------------------------------------------------------------
+# Éditeurs et système
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+desktop.ini
+
+# Code C généré depuis la ROM par tools/recomp : traduction du binaire du jeu
+generated/
+generated7/
+# Résultats de la cartographie (adresses, journaux) : dérivés de la ROM
+analysis/
+
+# La sauvegarde du joueur : elle vit à côté du dépôt, pas dedans.
+sauvegarde/
+
+# Les réglages du lanceur : ceux du joueur, à côté de l'exécutable
+lanceur.ini
+# Le journal du jeu lancé par le lanceur
+journal.txt
+
+# Le jeu préparé chez le joueur (tools/preparer.py) et son dossier de travail : construits depuis sa
+# cartouche, pour son usage personnel — rien de ce qui en sort ne se distribue.
+jeu/
+preparation/
+
+# Les outils de construction livrés avec une version publiée (Python, CMake, GCC) : téléchargés de leurs
+# sources officielles, joints au paquet par tools/paquet.py --avec-outils, jamais versionnés.
+outils/

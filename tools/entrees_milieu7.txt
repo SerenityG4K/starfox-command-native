@@ -1,0 +1,4 @@
+# Les adresses où l'on entre au milieu d'une fonction du coprocesseur sans que le code émis le dise
+# (voir tools/entrees_milieu.txt) : la reprise d'un thread dans son ordonnanceur.
+# adresse   fois
+0x037FC394  464132

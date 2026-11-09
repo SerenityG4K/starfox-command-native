@@ -1,0 +1,28 @@
+# Les adresses où l'on entre au milieu d'une fonction sans que le code émis le dise : un thread
+# qui reprend au retour d'OS_SaveContext, un retour par le dispatch. Relevées à l'exécution
+# (construction -DSFC_COMPTE_TRADUIT=ON, SFC_NATIF=entier SFC_TRADUIT=fichier, lignes « milieu »)
+# sur les cinq parcours ; le générateur en fait des réécritures secondaires.
+# adresse   fois
+0x0202DD9C  338583
+0x0200FE14  160659
+0x02095D00  6367
+0x0209594C  6365
+0x0208432E  408
+0x020842C6  288
+0x0200EE58  110
+0x0208B01A  102
+0x02095858  83
+0x02090030  22
+0x020957E0  10
+0x02090154  3
+0x02095C2C  2
+0x020A382A  1
+0x020A212C  1
+0x020A1B58  1
+0x020A1086  1
+0x020A088A  1
+0x02095CC0  1
+0x02095910  1
+0x02090080  1
+0x0203DB18  1
+0x0203853A  1
